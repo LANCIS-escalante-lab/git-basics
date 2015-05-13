@@ -1,0 +1,130 @@
+//////////////////////////////////// Git Basics //////////////////////////////////// 
+
+
+											/// First Time settings ///
+
+// * Set your user name
+
+git config --global user.name "Your Name"
+
+// * Set your e-email
+
+git config --global user.email johndoe@example.com
+
+// * Check Your Settings
+
+git config --list
+
+											/// Folder navigation ///
+											
+											
+//Return the full path of working directory
+
+pwd
+
+// List of files and folder in current directory
+
+ls
+
+// Navigate to Home folder
+
+cd
+
+// Navigate to some folder
+
+cd folderpath
+
+// Parent folder
+
+cd ..
+
+											/// Common workflow ///
+
+// 1. Create a new repository on GitHub with a README file.
+
+// 2. Go to working directory.
+
+// 3. Clone the new repository into current directory.
+
+git clone https://github.com/LANCIS-escalante-lab/git-basics
+
+// 4. Go to the cloned folder
+
+cd git-basics
+
+// 5. Move/create files 
+
+// 6. Add files to the staged area; alternatively: git add -A (adds all files to staging area).
+
+git add git-pipeline.txt
+
+// 7. Commit files to local repository
+
+git commit -m 'message'
+
+// 8. Push files to remote repository
+
+git push origin master
+
+// 9. Repeat steps 5-8 whenever necessary.
+
+// * Check files history
+
+got log
+
+// * Check add/commit status
+
+git status
+
+// * Pull changes from remote.
+
+git pull origin master
+
+*************************************************************************
+// * Reset commits
+
+git reset --hard HEAD~1
+
+// * Revert commits
+
+git revert HEAD~1
+
+// * Abort revert command
+
+git revert --abort
+
+// * Check previous commits
+
+git checkout commit_Hash
+
+// * Return to masters branch head.
+
+git checkout master
+
+// * Create new branch from master
+
+git branch new_branch_name
+
+// * Switch to other branch
+
+git checkout branch_name
+
+// * Create a new brach from old commit.
+
+git checkout -b new_branch_name
+
+// * Merge two branches
+
+git merge branch_1 branch_2s
+
+// * Abort merge command
+
+git merge --abort
+
+// * Initializes a git repository
+
+git init 
+
+// * Adds a remote
+
+git add origin github-repo-URL
