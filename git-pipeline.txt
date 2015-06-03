@@ -81,6 +81,9 @@ git status
 git pull origin master
 
 *************************************************************************
+
+
+
 // * Reset commits
 
 git reset --hard HEAD~1
@@ -127,4 +130,6 @@ git init
 
 // * Adds a remote
 
-git add origin github-repo-URL
+git remote add origin github-repo-URL
+
+git push --set-upstream origin master
